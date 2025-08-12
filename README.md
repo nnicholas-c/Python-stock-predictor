@@ -63,5 +63,3 @@ This project explores stock market prediction using various machine learning tec
     http://localhost:5000
     ```
 
-## Project Structure
-
