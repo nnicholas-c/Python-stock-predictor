@@ -14,7 +14,7 @@ This project explores stock market prediction using various machine learning tec
 
 ## Technologies Used
 
-- Python 3.x
+- Python 3.11
 - Libraries: pandas, numpy, scikit-learn, matplotlib, seaborn, Flask/Django (for web app)
 - Git for version control
 
