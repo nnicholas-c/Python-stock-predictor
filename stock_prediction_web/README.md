@@ -85,8 +85,4 @@ These instructions provide a general guide for deploying the application on a fr
 -   **Model Persistence:** The `stock_prediction_model.pkl` file needs to be present in the `src/` directory for the application to load the trained model.
 -   **Scalability:** This is a basic demonstration. For high-traffic applications, consider more robust solutions for data fetching, model serving, and frontend deployment.
 
-## Author
-
-Manus AI
-
 
