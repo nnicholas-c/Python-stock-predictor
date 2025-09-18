@@ -24,11 +24,10 @@ def get_stock_data(symbol, interval, outputsize, apikey):
     return df
 
 if __name__ == '__main__':
-    # Replace 'YOUR_API_KEY' with your actual Alpha Vantage API key
     api_key = 'TTP9QOHDLRX6OPOY' 
     symbol = 'IBM'
     interval = '5min'
-    outputsize = 'compact' # or 'full'
+    outputsize = 'compact'
 
     df = get_stock_data(symbol, interval, outputsize, api_key)
     if df is not None:
