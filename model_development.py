@@ -6,8 +6,6 @@ import joblib
 def develop_model(file_path):
     df = pd.read_csv(file_path, index_col=0, parse_dates=True)
 
-    # Feature Engineering: Using 'close' price as the target and 'open', 'high', 'low', 'volume' as features
-    # For simplicity, let's predict the next day's closing price
     df["target"] = df["close"].shift(-1)
     df.dropna(inplace=True)
 
@@ -20,8 +18,6 @@ def develop_model(file_path):
     # Initialize and train a Linear Regression model
     model = LinearRegression()
     model.fit(X_train, y_train)
-
-    # Save the trained model
     joblib.dump(model, "stock_prediction_model.pkl")
     print("Model trained and saved as stock_prediction_model.pkl")
 
