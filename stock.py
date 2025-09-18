@@ -50,8 +50,6 @@ def predict_stock():
 @cross_origin()
 def fetch_stock_data(symbol):
     try:
-        # This would use the Alpha Vantage API
-        # For demo purposes, return sample data
         api_key = 'TTP9QOHDLRX6OPOY'
         interval = '5min'
         url = f'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={symbol}&interval={interval}&outputsize=compact&apikey={api_key}'
